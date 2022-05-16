@@ -32,7 +32,7 @@ public class Main {
 
 
         //Info entrenador
-        System.out.println("Info del entrenador");
+        System.out.println("Info del entrenador: ");
         var entrenadorPokemon = new MaestroPokemonModel();
         System.out.println("Nombre: "+entrenadorPokemon.getNombre());
         System.out.println("Apellido: "+entrenadorPokemon.getApellido());

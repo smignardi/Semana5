@@ -14,7 +14,7 @@ public class Main {
             id = scanner.nextInt();
         }while (id<1 || id>150);
 
-        System.out.println("Ingresar un boolean");
+        System.out.println("Ingresar un boolean: ");
         var seImprimeTodaLista=scanner.nextBoolean();
 
         scanner.close();

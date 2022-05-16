@@ -2,3 +2,4 @@
 /target
 /src/test/resources/logs/**
 **.DS_Store
+*.iml

@@ -9,11 +9,7 @@ import java.util.List;
 public class ExcelReader {
 
     private final String EXCEL_PATH = "src/test/resources/testData/pokemonList.xlsx";
-    private final Logs log;
-
-    public ExcelReader() {
-        log = new Logs();
-    }
+    private final Logs log = new Logs();
 
     public List<PokemonModel> readPokemons(){
         log.debug("Leyendo datos del Excel");

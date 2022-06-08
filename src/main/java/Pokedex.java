@@ -11,7 +11,7 @@ public class Pokedex {
     public void imprimirListaPokemon() {
         var listPokemons = new ExcelReader().readPokemons();
 
-        for (PokemonModel pm : listPokemons) {
+        for (var pm : listPokemons) {
             if (pm.getAtrapado()) {
                 imprimirPokemon(pm);
             }

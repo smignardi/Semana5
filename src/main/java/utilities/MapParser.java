@@ -16,12 +16,12 @@ public class MapParser {
     }
 
     public HashMap<Integer,PokemonModel> getPokemonMap() {
-        List<PokemonModel> listPokemons = new ExcelReader().readPokemons();
+        var listPokemons = new ExcelReader().readPokemons();
 
         var hm = new HashMap<Integer,PokemonModel>();
 
         log.debug("Insertando data en el HashMap");
-        for (PokemonModel pm : listPokemons) {
+        for (var pm : listPokemons) {
             hm.put(pm.getId(), pm);
         }
 

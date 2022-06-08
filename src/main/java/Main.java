@@ -25,23 +25,21 @@ public class Main {
 
         var pokedex = new Pokedex();
 
-        var pokemon =  pokedex.quienEsEsePokemon(id);
+        var pokemon = pokedex.quienEsEsePokemon(id);
         pokedex.imprimirPokemon(pokemon);
 
-        if(seImprimeTodaLista){
+        if (seImprimeTodaLista) {
             pokedex.imprimirListaPokemon();
-        }else{
-            System.out.println("pipipipi");
+        } else {
             log.info("pipipip");
         }
-
 
         //Info entrenador
         log.debug("Imprimiendo data del entrenador");
         System.out.println("Info del entrenador: ");
         var entrenadorPokemon = new MaestroPokemonModel();
-        System.out.println("Nombre: "+entrenadorPokemon.getNombre());
-        System.out.println("Apellido: "+entrenadorPokemon.getApellido());
+        System.out.println("Nombre: " + entrenadorPokemon.getNombre());
+        System.out.println("Apellido: " + entrenadorPokemon.getApellido());
 
     }
 }

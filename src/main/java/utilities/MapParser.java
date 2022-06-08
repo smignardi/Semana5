@@ -20,7 +20,7 @@ public class MapParser {
 
         var hm = new HashMap<Integer,PokemonModel>();
 
-        log.info("Insertando data en el HashMap");
+        log.debug("Insertando data en el HashMap");
         for (PokemonModel pm : listPokemons) {
             hm.put(pm.getId(), pm);
         }

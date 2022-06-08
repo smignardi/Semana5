@@ -16,7 +16,7 @@ public class ExcelReader {
     }
 
     public List<PokemonModel> readPokemons(){
-        log.info("Leyendo datos del Excel");
+        log.debug("Leyendo datos del Excel");
         return Poiji.fromExcel(new File(EXCEL_PATH),PokemonModel.class);
     }
 }
